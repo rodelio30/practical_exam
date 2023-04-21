@@ -1,0 +1,178 @@
+body { 
+  background: #F1F1E6 !important; 
+  padding-bottom: 5%;
+ font-family: cursive;
+}
+.profile {
+  margin-top: 5%;
+  object-fit: cover;
+  object-position: 40% 5%;
+  overflow: hidden;
+}
+.my-body {
+  height: 100%;
+}
+.left{
+  background-color: #064E76;
+  color: white;
+}
+.pMzero {
+  margin : 0;
+}
+.ptop {
+  margin : 0;
+  padding-top:0;
+}
+.title-font {
+  /* color: #335384; */
+  color: #064E76;
+}
+/* Thick red border */
+hr.newLine {
+  border: 1px solid #444440;
+  width:20%;
+}
+
+.labo1 {
+    color: #777;
+    text-align: justify;
+}
+.labo2 {
+    color: rgb(172, 170, 170);
+}
+.space1 {
+    letter-spacing: 1px;
+}
+.space2 {
+    letter-spacing: 2px;
+}
+.space3 {
+    letter-spacing: 3px;
+    color: rgb(78, 74, 85);
+}
+.space4 {
+    letter-spacing: 4px;
+}
+
+/* This line below is for navigation */
+.topnav {
+  overflow: hidden;
+  background-color: #064E76;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* .topnav a.active {
+  background-color: #D5F4FF;
+  color:#064E76;
+} */
+
+.topnav .icon {
+  display: none;
+}
+.topnav a.split {
+  float: right;
+  background-color: #7D3223;
+  color: white;
+}
+.topnav a.split:hover {
+  float: right;
+  background-color: #ba6555;
+  color: white;
+}
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+ul.a {
+  list-style-type: circle;
+}
+
+/* .responsive {
+  max-width: 40%;
+  height: auto;
+} */
+
+/* disabled the image pointer */
+img{
+    pointer-events: none;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+.unselectable {
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
